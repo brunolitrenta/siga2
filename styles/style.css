@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+@font-face {
+    font-family: 'BaiJam';
+    src: url('../fonts/BaiJamjuree-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'BaiJam Bold';
+    src: url('../fonts/BaiJamjuree-Bold.ttf');
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+*{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+body{
+    background-image: linear-gradient(to right, lightgray, white);
+}
+
+h1{
+    font-family: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
+    color: #3A5461;
+    font-size: 2.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fateclogo{
+    width: 30%;
+    height: 80%;
+}
+
+.logo{
+    height: 15%;
+    width: 15%;
+}
+
+.htext{
+    width: 25%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    gap: 52%;
+}
+
+h3{
+    background-color: white;
+}
+
+h4{
+    background-color: white;
+}
+
+.das{
+    margin: 0;
+    display: flex;
+    gap: 18%;
+}
+
+.login{
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 3px 6px gray;
+}
+
+.input{
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.entrar{
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+    margin: 5%;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #3A5461;
+    color: white;
+}
+
+.entrar:hover{
+    color: black;
+}
+
+.entrar:active{
+    color: #fff;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: #fff;
+}
+
+.content{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: white;
+    width: 9%;
+    text-align: justify;
+}
+
+.exit{
+    display: flex;
+    margin-top: 2%;
+    width: 2%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #3A5461;
+    color: white;
+    text-decoration: none;
+}
+
+.perffoto{
+    width: 10%;
+    height: 10%;
+}
+
+.details{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30px;
+    border-radius: 10px;
+}
+
+.details > button{
+    background-color: #3A5461;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.details >button:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.details >button:active{
+    color: white;
+}
+
+.details > p{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

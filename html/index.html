@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>SIGA CPS</title>
+</head>
+<body>
+    <div class="header">
+        <div class="htext">
+            <h1>SIGA</h1>
+            <h2><a class="fatecanchor" href="https://fatecrl.edu.br/" target="_blank" rel="external"><img class="fateclogo" src="../images/logo-fatec.png" alt="Logo FATEC-RL"></a></h2>
+        </div>
+        <img class="logo" src="../images/unnamed-1024x1024.png" alt="Logo CPS">
+    </div>
+    <div class="das">
+        <div class="details">
+            <button onClick="exposeParagraph()">Detalhes</button>
+            <p id="detailsParagraph"></p>
+        </div>
+        <div class="login slide-in-right">
+            <h3>Login</h3>
+            <input class="input" type="text" id="inputText"></input>
+            <h3>Senha</h3>
+            <input class="input" type="password" id="inputPassword"></input>
+            <button class="entrar" onClick="loginAuth()">Entrar</button>
+        </div>
+    </div>
+    <!--<marquee loop="500" scrollamount="8" class="mensagem" behavior="slide" direction="left">
+        <img src="../images/538838-retro-aviao-voando-com-banner-de-publicidade-no-ceu-azul-ilustracaoial-vetor-removebg-preview-photoshop.png" alt="aviao">
+    </marquee>-->
+</body>
+<script src="../js/script.js"></script>
+</html>
