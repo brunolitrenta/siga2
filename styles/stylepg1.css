@@ -170,28 +170,3 @@ aside > p{
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
 }
-
-footer p{
-    margin-top: 5%;
-    margin-bottom: 0;
-    background-color: lightgray;
-    text-align: center;
-}
-
-footer a{
-    text-decoration: none;
-    color: var(--cordef);
-    font-weight: bold;
-}
-
-footer a:hover{
-    color: black;
-}
-
-footer a:active{
-    color: var(--cordef);
-}
-
-footer a::after{
-    content: '\1F517';
-}
