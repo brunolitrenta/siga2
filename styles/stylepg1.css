@@ -43,6 +43,10 @@
 
 body{
     background-image: linear-gradient(to right, lightgray, white);
+    max-width: none;
+    min-width: 270px;
+    max-height: none;
+    min-height: 660px;
 }
 
 header{
