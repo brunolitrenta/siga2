@@ -51,6 +51,13 @@ header{
     justify-content: space-between;
 }
 
+header .htext{
+    width: 25%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
 header h1{
     font-family: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
     color: #3A5461;
@@ -61,26 +68,23 @@ header a{
     text-decoration: none;
 }
 
-.htext{
-    width: 25%;
-    margin: 2%;
-    display: flex;
-    flex-direction: column;
+header .fatecanchor{
+    width: 120px;
 }
 
-.fateclogo{
+header .fateclogo{
     width: 120px;
     height: 65px;
     margin: 0;
 }
 
-.logocps{
+header .logocps{
     height: 190px;
     width: 200px;
     margin-right: 15px;
 }
 
-.login{
+main .login{
     max-width: 400px;
     min-width: 260px;
     margin: auto;
@@ -93,17 +97,17 @@ header a{
     box-shadow: 3px 3px 6px gray;
 }
 
-.login h3{
+main .login h3{
     background-color: white;
 }
 
-.input{
+main .input{
     background-color: lightgray;
     border-radius: 5px;
     border: 1px solid gray;
 }
 
-.entrar{
+main .entrar{
     cursor: pointer;
     font-size: 18px;
     border: 0;
@@ -115,16 +119,16 @@ header a{
     color: white;
 }
 
-.entrar:hover{
+main .entrar:hover{
     color: black;
     border: 1px solid black;
 }
 
-.entrar:active{
+main .entrar:active{
     color: #fff;
 }
 
-.details{
+aside{
     max-width: 360px;
     min-width: 260px;
     display: flex;
@@ -136,7 +140,7 @@ header a{
     border-radius: 10px;
 }
 
-.details > button{
+aside > button{
     background-color: #3A5461;
     color: #fff;
     text-decoration: none;
@@ -145,17 +149,17 @@ header a{
     border: 0;
 }
 
-.details > button:hover{
+aside > button:hover{
     color: black;
     cursor: pointer;
     border: 1px solid black;
 }
 
-.details > button:active{
+aside > button:active{
     color: white;
 }
 
-.details > p{
+aside > p{
     text-align: center;
     background-color: white;
     padding: 10px;

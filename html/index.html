@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/stylepg1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <title>SIGA CPS</title>
 </head>
@@ -18,17 +15,19 @@
         </div>
         <img class="logocps" src="../images/unnamed-1024x1024.png" alt="Logo CPS">
     </header>
-    <div class="login slide-in-right">
-        <h3>Login</h3>
-        <input class="input" type="text" id="inputText"></input>
-        <h3>Senha</h3>
-        <input class="input" type="password" id="inputPassword"></input>
-        <button class="entrar" onClick="loginAuth()">Entrar</button>
-    </div>
-    <div class="details">
+    <main>
+        <div class="login slide-in-right">
+            <h3>Login</h3>
+            <input class="input" type="text" id="inputText"></input>
+            <h3>Senha</h3>
+            <input class="input" type="password" id="inputPassword"></input>
+            <button class="entrar" onClick="loginAuth()">Entrar</button>
+        </div>
+    </main>
+    <aside>
         <button onClick="exposeParagraph()">Detalhes</button>
         <p id="detailsParagraph"></p>
-    </div>
+    </aside>
     <!--<marquee loop="500" scrollamount="8" class="mensagem" behavior="slide" direction="left">
         <img src="../images/538838-retro-aviao-voando-com-banner-de-publicidade-no-ceu-azul-ilustracaoial-vetor-removebg-preview-photoshop.png" alt="aviao">
     </marquee>-->
