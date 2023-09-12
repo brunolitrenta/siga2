@@ -1,5 +1,5 @@
 # siga2
- Recriando o portal SIGA
+ Recriando o portal SIGA do Centro Paula Souza
 
 Projeto focado em autoaprendizagem.
 
