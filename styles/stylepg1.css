@@ -7,10 +7,10 @@
     src: url('../fonts/BaiJamjuree-Bold.ttf');
 }
 
-@-webkit-keyframes slide-in-right {
+@-webkit-keyframes fade {
     0% {
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
       opacity: 0;
     }
     100% {
@@ -19,10 +19,10 @@
       opacity: 1;
     }
   }
-  @keyframes slide-in-right {
+  @keyframes fade {
     0% {
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
       opacity: 0;
     }
     100% {
@@ -40,9 +40,9 @@
     --cordef: #3A5461;
 }
 
-.slide-in-right {
-	-webkit-animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.fade {
+	-webkit-animation: fade 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 body{
