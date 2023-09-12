@@ -61,13 +61,13 @@ a{
 }
 
 .fateclogo{
-    width: 30%;
-    height: 80%;
+    width: 120px;
+    height: 65px;
 }
 
 .logo{
-    height: 15%;
-    width: 15%;
+    height: 190px;
+    width: 200px;
 }
 
 .htext{
@@ -79,7 +79,7 @@ a{
 
 .header{
     display: flex;
-    gap: 52%;
+    justify-content: space-between;
 }
 
 h3{
@@ -90,14 +90,10 @@ h4{
     background-color: white;
 }
 
-.das{
-    margin: 0;
-    display: flex;
-    gap: 18%;
-}
-
 .login{
-    width: 25%;
+    max-width: 400px;
+    min-width: 260px;
+    margin: auto;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -166,13 +162,14 @@ a:active{
 }
 
 .details{
-    width: 300px;
-    height: 200px;
+    max-width: 360px;
+    min-width: 260px;
     display: flex;
+    margin: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -30px;
+    margin-top: 25px;
     border-radius: 10px;
 }
 
