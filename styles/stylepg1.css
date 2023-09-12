@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 
 @font-face {
-    font-family: 'BaiJam';
-    src: url('../fonts/BaiJamjuree-Regular.ttf');
-}
-
-@font-face {
     font-family: 'BaiJam Bold';
     src: url('../fonts/BaiJamjuree-Bold.ttf');
 }
@@ -50,24 +45,20 @@ body{
     background-image: linear-gradient(to right, lightgray, white);
 }
 
-h1{
+header{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
     font-family: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
     color: #3A5461;
     font-size: 2.5em;
 }
 
-a{
+header a{
     text-decoration: none;
-}
-
-.fateclogo{
-    width: 120px;
-    height: 65px;
-}
-
-.logo{
-    height: 190px;
-    width: 200px;
 }
 
 .htext{
@@ -77,17 +68,16 @@ a{
     flex-direction: column;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
+.fateclogo{
+    width: 120px;
+    height: 65px;
+    margin: 0;
 }
 
-h3{
-    background-color: white;
-}
-
-h4{
-    background-color: white;
+.logocps{
+    height: 190px;
+    width: 200px;
+    margin-right: 15px;
 }
 
 .login{
@@ -101,6 +91,10 @@ h4{
     flex-direction: column;
     background-color: white;
     box-shadow: 3px 3px 6px gray;
+}
+
+.login h3{
+    background-color: white;
 }
 
 .input{
@@ -123,42 +117,11 @@ h4{
 
 .entrar:hover{
     color: black;
+    border: 1px solid black;
 }
 
 .entrar:active{
     color: #fff;
-}
-
-a:hover{
-    color: black;
-}
-
-a:active{
-    color: #fff;
-}
-
-.content{
-    padding: 7px;
-    border-radius: 10px;
-    background-color: white;
-    width: 9%;
-    text-align: justify;
-}
-
-.exit{
-    display: flex;
-    margin-top: 2%;
-    width: 2%;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #3A5461;
-    color: white;
-    text-decoration: none;
-}
-
-.perffoto{
-    width: 10%;
-    height: 10%;
 }
 
 .details{
@@ -182,12 +145,13 @@ a:active{
     border: 0;
 }
 
-.details >button:hover{
+.details > button:hover{
     color: black;
     cursor: pointer;
+    border: 1px solid black;
 }
 
-.details >button:active{
+.details > button:active{
     color: white;
 }
 
@@ -196,4 +160,5 @@ a:active{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
 }
