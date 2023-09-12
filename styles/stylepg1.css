@@ -38,11 +38,13 @@
 
 :root{
     --cordef: #3A5461;
+
+    --fontftc: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
 }
 
 .fade {
-	-webkit-animation: fade 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: fade 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: fade 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 body{
@@ -63,7 +65,7 @@ header .htext{
 }
 
 header h1{
-    font-family: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
+    font-family: var(--fontftc);
     color: var(--cordef);
     font-size: 2.5em;
 }
