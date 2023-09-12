@@ -36,6 +36,10 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+:root{
+    --cordef: #3A5461;
+}
+
 .slide-in-right {
 	-webkit-animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -60,7 +64,7 @@ header .htext{
 
 header h1{
     font-family: 'BaiJam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
-    color: #3A5461;
+    color: var(--cordef);
     font-size: 2.5em;
 }
 
@@ -115,7 +119,7 @@ main .entrar{
     padding: 0.25rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    background-color: #3A5461;
+    background-color: var(--cordef);
     color: white;
 }
 
@@ -141,7 +145,7 @@ aside{
 }
 
 aside > button{
-    background-color: #3A5461;
+    background-color: var(--cordef);
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
@@ -165,4 +169,29 @@ aside > p{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
+}
+
+footer p{
+    margin-top: 5%;
+    margin-bottom: 0;
+    background-color: lightgray;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cordef);
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: black;
+}
+
+footer a:active{
+    color: var(--cordef);
+}
+
+footer a::after{
+    content: '\1F517';
 }
