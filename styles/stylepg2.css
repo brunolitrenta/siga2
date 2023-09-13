@@ -11,38 +11,105 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+:root{
+    --cordef: #3A5461;
+}
+
 body{
     background-image: linear-gradient(to right, lightgray, white);
+    font-size: 1em;
 }
 
-a:hover{
-    color: black;
+main{
+    display: flex;
+    gap: 15%;
+    max-width: 800px;
+    min-width: 340px;
 }
 
-a:active{
-    color: #fff;
+.perffoto{
+    max-width: 100px;
+    min-width: 50px;
+    max-height: 100px;
+    min-height: 50px;
 }
 
 .content{
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px 0px 20px;
     border-radius: 10px;
     background-color: white;
-    width: 9%;
-    text-align: justify;
+    max-width: 500px;
+    min-width: 260px;
+    height: 50px;
+}
+
+.content > ul{
+    columns: 4;
+    width: 500px;
+    padding-left: 20px;
+    margin: 0;
+    height: 20px;
+}
+
+.content > ul > div > li{
+    margin: 0;
+    width: 70px;
+}
+
+.content > ul > div > ul{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu:hover > .hidden{
+    position: absolute;
+    left: 255px;
+    bottom: 540px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 15px 10px 5px 30px;
+}
+
+.hidden a{
+    text-decoration: none;
+}
+
+.hidden a:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 .exit{
     display: flex;
-    margin-top: 2%;
-    width: 2%;
+    width: 30px;
+    margin-top: 20px;
     border-radius: 5px;
     padding: 5px;
-    background-color: #3A5461;
+    justify-content: center;
+    background-color: var(--cordef);
     color: white;
+    align-items: center;
     text-decoration: none;
 }
 
-.perffoto{
-    width: 10%;
-    height: 10%;
+.exit:hover{
+    color: black;
+    border: 1px solid black;
 }
+
+.exit:active{
+    color: #fff;
+}
+

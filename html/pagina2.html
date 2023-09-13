@@ -9,20 +9,29 @@
 </head>
 <body>
     <h1>Área do aluno</h1>
-    <div class="perf">
-        <img class="perffoto" src="../images/fotodesafio.png" alt="Foto de Perfil">
-        <h2>Nome:</h2>
-        <h2>RA:</h2>
-        <h2>Curso:</h2>
-    </div>
-    <div class="content">
-        <h3>Notas</h3>
-        <h4>Médias</h4>
-        <h4>Notas Individuais</h4>
-        <h3>Grade</h3>
-        <h3>Presenças</h3>
-        <h3>Horários</h3>
-    </div>
+    <main>
+        <div class="ident">
+            <img class="perffoto" src="../images/fotodesafio.png" alt="Foto de Perfil">
+            <h2>Nome:</h2>
+            <h2>RA:</h2>
+            <h2>Curso:</h2>
+        </div>
+        <div class="content">
+            <ul type="disc">
+                <div class="menu">
+                    <li>Notas</li>
+                    <ul class="hidden" type="circle">
+                        <li><a href="#">Médias</a></li>
+                        <li><a href="#">Notas</a></li>
+                    </ul>
+                </div>
+                <li>Grade</li>
+                <li>Presenças</li>
+                <li>Horários</li>
+            </ul>
+        </div>
+    </main>
     <a class="exit" href="../html/index.html" target="_self" rel="prev">Sair</a>
 </body>
+<script src="../js/script.js"></script>
 </html>
