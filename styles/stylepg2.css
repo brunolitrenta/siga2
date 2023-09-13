@@ -73,8 +73,8 @@ main{
 
 .menu:hover > .hidden{
     position: absolute;
-    left: 255px;
-    bottom: 540px;
+    left: 16.5%;
+    bottom: 73%;
     display: flex;
     flex-direction: column;
     background-color: white;
