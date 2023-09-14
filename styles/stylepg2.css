@@ -138,13 +138,17 @@ nav{
 .hidden{
     position: absolute;
     left: -5px;
-    top: 25px;
+    top: 20px;
     z-index: 99;
     background-color: white;
     border-radius: 0px 0px 5px 5px;
-    padding: 15px 0px 5px 25px;
+    padding: 10px 0px 5px 25px;
     min-width: 60px;
     display: none;
+}
+
+.hidden li{
+    font-size: 0.9rem;
 }
 
 .hidden a{
