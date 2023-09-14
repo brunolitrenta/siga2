@@ -8,14 +8,30 @@
     <title>Área do aluno</title>
 </head>
 <body>
-    <h1>Área do aluno</h1>
-    <main>
+    <header>
+        <h1>Área do aluno</h1>
         <div class="ident">
-            <img class="perffoto" src="../images/fotodesafio.png" alt="Foto de Perfil">
-            <h2>Nome:</h2>
-            <h2>RA:</h2>
-            <h2>Curso:</h2>
+            <div class="posident">
+                <img class="perffoto" src="../images/fotodesafio.png" alt="Foto de Perfil">
+                <div class="txtpos">
+                    <div>
+                        <h2>Nome:</h2>
+                        <p id="pnome"></p>
+                    </div>
+                    <div>
+                        <h2>RA:</h2>
+                        <p id="pra"></p>
+                    </div>
+                    <div>
+                        <h2>Curso:</h2>
+                        <p id="pcurso"></p>
+                    </div>
+                </div>
+            </div>
+            <a class="exit" href="../html/index.html" target="_self" rel="prev">Sair</a>
         </div>
+    </header>
+    <main>
         <div class="content">
             <ul class="submenu" type="disc">
                 <li>Notas</li>
@@ -35,7 +51,6 @@
                 </ul>
         </div>
     </main>
-    <a class="exit" href="../html/index.html" target="_self" rel="prev">Sair</a>
 </body>
 <script src="../js/script.js"></script>
 </html>
