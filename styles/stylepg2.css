@@ -45,13 +45,26 @@ header > h1{
 
 .txtpos{
     width: 700px;
+    height: 120px;
     display: flex;
-    justify-content: space-around;
-    margin-left: -5%;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
 .txtpos h2{
     font-size: 1rem;
+}
+
+.txtpos p{
+    font-size: 0.9rem;
+    margin-left: 0.4rem;
+    text-align: justify;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .perffoto{
@@ -163,7 +176,7 @@ nav{
 main{
     max-width: 800px;
     min-width: 280px;
-    height: 300px;
+    height: 260px;
     margin: auto;
     margin-top: 20px;
     border-radius: 5px;
