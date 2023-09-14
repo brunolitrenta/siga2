@@ -36,9 +36,9 @@ main{
 
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px 40px 0px 20px;
+    padding: 0px 20px 0px 20px;
     border-radius: 10px;
     background-color: white;
     max-width: 500px;
@@ -47,39 +47,42 @@ main{
 }
 
 .content > ul{
-    columns: 4;
-    width: 500px;
+    columns: 1;
+    width: 80px;
     padding-left: 20px;
     margin: 0;
+    margin-right: 10px;
     height: 20px;
 }
 
-.content > ul > div > li{
+.content > ul > li{
     margin: 0;
     width: 70px;
 }
 
-.content > ul > div > ul{
+.submenu{
+    cursor: pointer;
+    position: relative;
+}
+
+.hidden{
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    z-index: 99;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 15px 0px 5px 30px;
+    min-width: 60px;
     display: none;
 }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.submenu:hover .hidden{
     cursor: pointer;
-}
-
-.menu:hover > .hidden{
-    position: absolute;
-    left: 16.5%;
-    bottom: 73%;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 0px 0px 5px 5px;
-    padding: 15px 10px 5px 30px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .hidden a{
