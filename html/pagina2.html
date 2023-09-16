@@ -9,7 +9,11 @@
 </head>
 <body>
     <header>
-        <h1>Área do aluno</h1>
+        <div class="title">
+            <img class="fateclogo" src="../images/logo-fatec.png" alt="Logo FATEC">
+            <h1>SIGA</h1>
+            <img class="logocps" src="../images/logocps.png" alt="Logo CPS">
+        </div>
         <div class="ident">
             <div class="posident">
                 <img class="perffoto" src="../images/fotodesafio.png" alt="Foto de Perfil">
@@ -26,6 +30,10 @@
                         <h2>Curso:</h2>
                         <p id="pcurso">ADS</p>
                     </div>
+                    <div class="flex">
+                        <h2>Ciclo:</h2>
+                        <p id="pcurso">2°</p>
+                    </div>
                 </div>
             </div>
             <a class="exit" href="../html/index.html" target="_self" rel="prev">Sair</a>
@@ -33,22 +41,42 @@
     </header>
     <nav>
         <div class="content">
-            <ul class="submenu" type="disc">
+            <ul class="submenu">
                 <li>Notas</li>
-                <ul class="hidden" type="circle">
-                <li><a href="#">Médias</a></li>
-                <li><a href="#">Notas</a></li>
+                <ul class="hidden" type="none">
+                    <li><a href="#">Médias</a></li>
+                    <li><a href="#">Etapas</a></li>
                 </ul>
             </ul>
-                <ul>
-                    <li>Grade</li>
+            <ul class="submenu">
+                <li>Grade</li>
+                <ul class="hidden" type="none">
+                    <li><a href="#">1° Ciclo</a></li>
+                    <li><a href="#">2° Ciclo</a></li>
+                    <li><a href="#">3° Ciclo</a></li>
+                    <li><a href="#">4° Ciclo</a></li>
+                    <li><a href="#">5° Ciclo</a></li>
+                    <li><a href="#">6° Ciclo</a></li>
                 </ul>
-                <ul>
-                    <li>Presenças</li>
+            </ul>
+            <ul class="submenu">
+                <li>Presença</li>
+                <ul class="hidden wide" type="none">
+                    <li><a href="#">Porcentagem</a></li>
+                    <li><a href="#">Individual</a></li>
                 </ul>
-                <ul>
-                    <li>Horários</li>
+            </ul>
+            <ul class="submenu">
+                <li>Horários</li>
+                <ul class="hidden wide" type="none">
+                    <li><a href="#">Segunda-Feira</a></li>
+                    <li><a href="#">Terça-Feira</a></li>
+                    <li><a href="#">Quarta-Feira</a></li>
+                    <li><a href="#">Quinta-Feira</a></li>
+                    <li><a href="#">Sexta-Feira</a></li>
+                    <li><a href="#">Sábado</a></li>
                 </ul>
+            </ul>
         </div>
     </nav>
     <main>

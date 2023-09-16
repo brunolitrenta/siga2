@@ -85,9 +85,10 @@ header .fateclogo{
 }
 
 header .logocps{
-    height: 190px;
+    height: 60px;
     width: 200px;
-    margin-right: 15px;
+    margin-top: 80px;
+    margin-right: 20px;
 }
 
 main .login{

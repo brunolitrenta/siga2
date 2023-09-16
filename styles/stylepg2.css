@@ -21,11 +21,31 @@ body{
     font-size: 1em;
 }
 
-header > h1{
-    text-align: center;
+header .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
-    margin-bottom: 15px;
+}
+
+header .fateclogo{
+    width: 80px;
+    height: 45px;
+    margin: 0;
+}
+
+header > .title > h1{
+    font-size: 2.5rem;
+    margin: auto;
+    font-size: 2.5rem;
+    color: var(--cordef);
+    font-weight: bold;
     font-family: 'Baijam Bold', 'Catamaran', Arial, Helvetica, sans-serif;
+}
+
+header .logocps{
+    height: 40px;
+    width: 140px;
 }
 
 .ident{
@@ -35,7 +55,7 @@ header > h1{
     padding: 15px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 .posident{
@@ -64,7 +84,7 @@ header > h1{
 .flex{
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 45px;
 }
 
 .perffoto{
@@ -145,7 +165,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.258);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.250);
 }
 
 .hidden{
@@ -155,7 +175,7 @@ nav{
     z-index: 99;
     background-color: white;
     border-radius: 0px 0px 5px 5px;
-    padding: 10px 0px 5px 25px;
+    padding: 10px 0px 5px 15px;
     min-width: 60px;
     display: none;
 }
@@ -173,6 +193,18 @@ nav{
     text-decoration: underline;
 }
 
+.wide{
+    position: absolute;
+    left: -18px;
+    top: 20px;
+    min-width: 90px;
+    padding: 10px 0px 5px 10px;
+}
+
+.wide li{
+    font-size: 0.8rem;
+}
+
 main{
     max-width: 800px;
     min-width: 280px;
@@ -181,7 +213,7 @@ main{
     margin-top: 20px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.299);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.250);
     padding: 15px;
 }
 
