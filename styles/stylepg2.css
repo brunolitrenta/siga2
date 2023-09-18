@@ -198,7 +198,7 @@ nav{
     position: absolute;
     left: -18px;
     top: 20px;
-    min-width: 90px;
+    min-width: 85px;
     padding: 10px 0px 5px 10px;
 }
 
@@ -210,7 +210,7 @@ nav{
     position: absolute;
     left: -10px;
     top: 20px;
-    min-width: 90px;
+    min-width: 80px;
     padding: 10px 0px 5px 10px;
 }
 
