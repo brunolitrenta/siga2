@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+:root{
+    --cordef: #3A5461;
+    --corsha: #6aadcf;
+}
+
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    text-align: center;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.divisoria{
+    display: flex;
+    justify-content: center;
+}
+
+.materia{
+    background-color: var(--cordef);
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.materia h2{
+    font-size: 0.9em;
+}
+
+.materia p{
+    font-size: 0.7em;
+}

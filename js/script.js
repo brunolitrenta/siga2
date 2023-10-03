@@ -1,8 +1,37 @@
+function userdata(userName) {
+    console.log({userName})
+    const datausers = [{
+        nome: "Bruno Vergara",
+        usuario: "briven",
+        ra: "001",
+        curso: "ADS",
+        ciclo: "2°"
+    },
+    {
+        nome: "Neneca da Silva",
+        usuario: "neneca",
+        ra: "002",
+        curso: "ADS",
+        ciclo: "2°"
+    },
+    ]
+
+    const namep = document.getElementById("pnome")
+    const rap = document.getElementById("pra")
+    const cursop = document.getElementById("pcurso")
+
+    const userLoged = datausers.find(datauser => datauser.usuario == userName)
+
+    namep.innerHTML = userLoged.nome
+    rap.innerHTML = userLoged.ra
+    cursop.innerHTML = userLoged.curso
+}
+
 function loginAuth() {
     const users = [{
         name: "neneca",
         password: "auladorui"
-        
+
     },
     {
         name: "briven",
@@ -13,42 +42,22 @@ function loginAuth() {
 
     const correctUserFinder = users.find(user => user.name == inputTextValue)
     if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
-        window.location.href = "pagina2.html"
+        console.log(correctUserFinder.name)
+        /*userdata(correctUserFinder.name)*/
+        window.location.href = "aluno.html"
+        
     }
-    if(!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
+    if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
         window.alert("Usuário ou senha incorretos. Tente novamente.");
     }
-    userdata(inputTextValue)
 }
 
 function exposeParagraph() {
     const paragraph = document.getElementById("detailsParagraph")
-    if(paragraph.innerHTML=="FATEC Rubens Lara é uma faculdade estadual, com enfoque em tecnologia e desenvolvimento profissional."){
-        paragraph.innerHTML= ""
+    if (paragraph.innerHTML == "FATEC Rubens Lara é uma faculdade estadual, com enfoque em tecnologia e desenvolvimento profissional.") {
+        paragraph.innerHTML = ""
     }
     else {
         paragraph.innerHTML = "FATEC Rubens Lara é uma faculdade estadual, com enfoque em tecnologia e desenvolvimento profissional."
-    }
-}
-
-function userdata(inputTextValue){
-    const dataus = [{
-        nome: "Bruno Vergara",
-        ra: "001",
-        curso: "ADS"
-    }]
-
-    const namep = document.getElementById("pnome")
-    const rap = document.getElementById("pra")
-    const cursop = document.getElementById("pcurso")
-
-    const nomed = dataus.find(dataus => dataus.nome)
-    const rad = dataus.find(dataus => dataus.ra)
-    const cursod = dataus.find(dataus=> dataus.curso)
-    
-    if(inputTextValue=="briven"){
-        namep.innerHTML = nomed
-        rap.innerHTML = rad
-        cursop.innerHTML = cursod
     }
 }
