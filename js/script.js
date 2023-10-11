@@ -1,5 +1,4 @@
-function userdata(userName) {
-    console.log({userName})
+function userdata(username) {
     const datausers = [{
         nome: "Bruno Vergara",
         usuario: "briven",
@@ -16,15 +15,8 @@ function userdata(userName) {
     },
     ]
 
-    const namep = document.getElementById("pnome")
-    const rap = document.getElementById("pra")
-    const cursop = document.getElementById("pcurso")
-
-    const userLoged = datausers.find(datauser => datauser.usuario == userName)
-
-    namep.innerHTML = userLoged.nome
-    rap.innerHTML = userLoged.ra
-    cursop.innerHTML = userLoged.curso
+    const user = datausers.find(user => user.usuario == username)
+    return user
 }
 
 function loginAuth() {
@@ -42,6 +34,12 @@ function loginAuth() {
     for (var u in usuarios) {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
+            const user = userdata(usuario);
+            if(!user){
+                alert("Usuário não encontrado, tente novamente.");
+                return;
+            }
+            window.sessionStorage.setItem("usuario",JSON.stringify(user));
             window.location.href = "aluno.html";
             return;
         }
