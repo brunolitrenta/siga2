@@ -1,5 +1,5 @@
 //var declarations
-  const pnomeElement = document.getElementbyId('pnome')
+  const pnomeElement = document.getElementById('pnome')
 
 //function declarations
   function getUserData(){
