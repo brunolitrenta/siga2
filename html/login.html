@@ -17,20 +17,19 @@
     </header>
     <main>
         <div class="login fade">
-            <h3>Login</h3>
-            <input class="input" type="text" id="inputText"></input>
-            <h3>Senha</h3>
-            <input class="input" type="password" id="inputPassword"></input>
-            <button class="entrar" onClick="loginAuth()">Entrar</button>
+            <form autocomplete="off" method="post">
+                <h3><label for="inputText">Login</label></h3>
+                    <input class="input" type="text" id="inputText" name="inputText" placeholder="Usuário" required=""></input>
+                <h3><label for="inputPassword">Senha</label></h3>
+                    <input class="input" type="password" id="inputPassword" name="inputPassword" placeholder="Senha" required=""></input>
+                    <input type="submit" class="entrar" onClick="return loginAuth()" value="Entrar"></input>
+            </form>
         </div>
     </main>
     <aside>
         <button onClick="exposeParagraph()">Detalhes</button>
         <p id="detailsParagraph"></p>
     </aside>
-    <!--<marquee loop="500" scrollamount="8" class="mensagem" behavior="slide" direction="left">
-        <img src="../images/538838-retro-aviao-voando-com-banner-de-publicidade-no-ceu-azul-ilustracaoial-vetor-removebg-preview-photoshop.png" alt="aviao">
-    </marquee>-->
 </body>
 <script src="../js/script.js"></script>
 </html>

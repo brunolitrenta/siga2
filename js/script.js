@@ -28,29 +28,28 @@ function userdata(userName) {
 }
 
 function loginAuth() {
-    const users = [{
-        name: "neneca",
-        password: "auladorui"
-
+    var usuarios = [{
+        "login": "neneca",
+        "senha": "auladorui"
     },
     {
-        name: "briven",
-        password: "auladoruim"
+        "login": "briven",
+        "senha": "auladoruim"
     }]
-    const inputTextValue = document.querySelector("#inputText").value
-    const inputPasswordValue = document.querySelector("#inputPassword").value
+    var usuario = document.getElementsByName('inputText')[0].value.toLowerCase();
+    var senha = document.getElementsByName('inputPassword')[0].value.toLowerCase();
 
-    const correctUserFinder = users.find(user => user.name == inputTextValue)
-    if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
-        console.log(correctUserFinder.name)
-        /*userdata(correctUserFinder.name)*/
-        window.location.href = "aluno.html"
-        
+    for (var u in usuarios) {
+        var us = usuarios[u];
+        if (us.login === usuario && us.senha === senha) {
+            window.location.href = "aluno.html";
+            return true;
+        }
     }
-    if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
-        window.alert("Usuário ou senha incorretos. Tente novamente.");
-    }
+    alert("Dados incorretos, tente novamente.");
+    return false;
 }
+    
 
 function exposeParagraph() {
     const paragraph = document.getElementById("detailsParagraph")
@@ -61,3 +60,31 @@ function exposeParagraph() {
         paragraph.innerHTML = "FATEC Rubens Lara é uma faculdade estadual, com enfoque em tecnologia e desenvolvimento profissional."
     }
 }
+
+// var usuario = document.getElementsByName('username')[0].value.toLowerCase();
+//     var senha = document.getElementsByName('password')[0].value;
+
+//     for (var u in usuarios) {
+//         var us = usuarios[u];
+//         if (us.login === usuario && us.senha === senha) {
+//             window.location = "index.html";
+//             return true;
+//         }
+//     }
+//     alert("Dados incorretos, tente novamente.");
+//     return false;
+// }
+
+// const inputTextValue = document.querySelector("#inputText").value
+//     const inputPasswordValue = document.querySelector("#inputPassword").value
+
+//     const correctUserFinder = users.find(user => user.name == inputTextValue)
+//     if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
+//         /*userdata(correctUserFinder.name)*/
+//         window.location.href = "aluno.html"
+        
+//     }
+//     if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
+//         window.alert("Usuário ou senha incorretos. Tente novamente.");
+//     }
+// }

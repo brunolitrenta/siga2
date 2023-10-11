@@ -104,11 +104,20 @@ main .login{
     box-shadow: 3px 3px 6px gray;
 }
 
+main form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 main .login h3{
     background-color: white;
+    text-align: center;
 }
 
 main .input{
+    text-align: center;
     background-color: lightgray;
     border-radius: 5px;
     border: 1px solid gray;
@@ -118,7 +127,8 @@ main .entrar{
     cursor: pointer;
     font-size: 18px;
     border: 0;
-    margin: 5%;
+    margin-top: 20px;
+    margin-bottom: 15px;
     padding: 0.25rem 1rem;
     border-radius: 5px;
     text-decoration: none;
