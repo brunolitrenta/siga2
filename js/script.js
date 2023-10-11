@@ -37,7 +37,7 @@ function loginAuth() {
         "senha": "auladoruim"
     }]
     var usuario = document.getElementsByName('inputText')[0].value.toLowerCase();
-    var senha = document.getElementsByName('inputPassword')[0].value.toLowerCase();
+    var senha = document.getElementsByName('inputPassword')[0].value
 
     for (var u in usuarios) {
         var us = usuarios[u];
