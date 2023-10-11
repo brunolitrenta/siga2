@@ -43,13 +43,10 @@ function loginAuth() {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
             window.location.href = "aluno.html";
-            return true;
         }
     }
     alert("Dados incorretos, tente novamente.");
-    return false;
 }
-    
 
 function exposeParagraph() {
     const paragraph = document.getElementById("detailsParagraph")
