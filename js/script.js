@@ -43,6 +43,7 @@ function loginAuth() {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
             window.location.href = "aluno.html";
+            return;
         }
     }
     alert("Dados incorretos, tente novamente.");
@@ -72,16 +73,15 @@ function exposeParagraph() {
 //     return false;
 // }
 
-// const inputTextValue = document.querySelector("#inputText").value
-//     const inputPasswordValue = document.querySelector("#inputPassword").value
+//const inputTextValue = document.querySelector("#inputText").value
+//const inputPasswordValue = document.querySelector("#inputPassword").value
 
-//     const correctUserFinder = users.find(user => user.name == inputTextValue)
-//     if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
-//         /*userdata(correctUserFinder.name)*/
-//         window.location.href = "aluno.html"
+//const correctUserFinder = users.find(user => user.name == inputTextValue)
+//if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
+ //  window.location.href = "aluno.html"
         
-//     }
-//     if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
-//         window.alert("Usuário ou senha incorretos. Tente novamente.");
-//     }
+ // }
+//  if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
+ //      window.alert("Usuário ou senha incorretos. Tente novamente.");
+  //  }
 // }
