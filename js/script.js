@@ -57,29 +57,15 @@ function exposeParagraph() {
     }
 }
 
-// var usuario = document.getElementsByName('username')[0].value.toLowerCase();
-//     var senha = document.getElementsByName('password')[0].value;
-
-//     for (var u in usuarios) {
-//         var us = usuarios[u];
-//         if (us.login === usuario && us.senha === senha) {
-//             window.location = "index.html";
-//             return true;
-//         }
-//     }
-//     alert("Dados incorretos, tente novamente.");
-//     return false;
-// }
-
 //const inputTextValue = document.querySelector("#inputText").value
 //const inputPasswordValue = document.querySelector("#inputPassword").value
 
 //const correctUserFinder = users.find(user => user.name == inputTextValue)
 //if (correctUserFinder && correctUserFinder.password == inputPasswordValue) {
- //  window.location.href = "aluno.html"
+//  window.location.href = "aluno.html"
         
- // }
+// }
 //  if (!correctUserFinder || correctUserFinder.password !== inputPasswordValue) {
- //      window.alert("Usuário ou senha incorretos. Tente novamente.");
-  //  }
+//      window.alert("Usuário ou senha incorretos. Tente novamente.");
+//  }
 // }
