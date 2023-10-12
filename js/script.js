@@ -13,6 +13,13 @@ function userdata(username) {
         curso: "ADS",
         ciclo: "2°"
     },
+    {
+        nome: "Guilherme Heineken",
+        usuario: "bigas",
+        ra: "003",
+        curso: "Preguiçoso",
+        ciclo: "Todo dia ele cicla"
+    }
     ]
 
     const user = datausers.find(user => user.usuario == username)
@@ -27,6 +34,10 @@ function loginAuth() {
     {
         "login": "briven",
         "senha": "auladoruim"
+    },
+    {
+        "login": "bigas",
+        "senha": "adeptodosuco"
     }]
     var usuario = document.getElementsByName('inputText')[0].value.toLowerCase();
     var senha = document.getElementsByName('inputPassword')[0].value
