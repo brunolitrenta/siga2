@@ -8,8 +8,8 @@
   function getUserData(){
     const usuario = JSON.parse(window.sessionStorage.getItem("usuario"))
     if(!usuario){
-      alert("Dados não encontrados.")
-      settimeout(()=>{window.location.href="login.html"},5000)
+      alert("Sessão Inválida.")
+      window.location.href="login.html"
       return;
     }
     pnomeElement.innerText = usuario.nome;
