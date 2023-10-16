@@ -138,7 +138,7 @@ main .entrar{
 
 main .entrar:hover{
     color: black;
-    box-shadow: 0px 0px 1px black;
+    outline: 1px solid black;
 }
 
 main .entrar:active{
@@ -169,7 +169,7 @@ aside > button{
 aside > button:hover{
     color: black;
     cursor: pointer;
-    box-shadow: 0px 0px 1px black;
+    outline: 1px solid black;
 }
 
 aside > button:active{

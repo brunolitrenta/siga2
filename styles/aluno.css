@@ -110,7 +110,7 @@ header .logocps{
 
 .exit:hover{
     color: var(--corsha);
-    box-shadow: 0px 0px 1px black;
+    outline: 1px solid black;
 }
 
 .exit:active{
