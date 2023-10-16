@@ -26,7 +26,14 @@ function userdata(username) {
         ra: "009",
         curso: "Amor",
         ciclo: "Infinito"
-    }                   
+    },     
+    {
+        nome: "Greis Lukaku",
+        usuario: "greis",
+        ra: "004",
+        curso: "Ídolo",
+        ciclo: "Todos"
+    }            
     ]
 
     const user = datausers.find(user => user.usuario == username)
@@ -49,7 +56,11 @@ function loginAuth() {
     {
         "login": "walterwhite",
         "senha": "camisanove"
-    }                
+    },
+    {
+        "login": "greis",
+        "senha": "igualopele"
+    }              
     ]
     var usuario = document.getElementsByName('inputText')[0].value.toLowerCase();
     var senha = document.getElementsByName('inputPassword')[0].value
