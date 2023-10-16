@@ -92,6 +92,7 @@ header .logocps{
     min-width: 70px;
     max-height: 70px;
     min-height: 20px;
+    border-radius: 50%;
 }
 
 .exit{

@@ -16,6 +16,9 @@
     praElement.innerText = usuario.ra;
     pcursoElement.innerText = usuario.curso; 
     pcicloElement.innerText = usuario.ciclo;
+
+    const img = document.querySelector("#pimage");
+    img.setAttribute('src',`../images/perfimages/${usuario.ra}foto.png`)
   }
 
 //actions
