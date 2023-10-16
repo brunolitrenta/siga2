@@ -17,11 +17,11 @@
     </header>
     <main>
         <div class="login fade">
-            <form autocomplete="off" method="post">
+            <form autocomplete="on" method="post">
                 <h3><label for="inputText">Login</label></h3>
-                    <input class="input" type="text" id="inputText" name="inputText" placeholder="Usuário" required=""></input>
+                    <input class="input" type="text" id="inputText" name="inputText" placeholder="Usuário" required autocomplete="username"></input>
                 <h3><label for="inputPassword">Senha</label></h3>
-                    <input class="input" type="password" id="inputPassword" name="inputPassword" placeholder="Senha" required=""></input>
+                    <input class="input" type="password" id="inputPassword" name="inputPassword" placeholder="Senha" required autocomplete="current-password"></input>
                     <input type="button" class="entrar" onclick="loginAuth()" value="Entrar"></input>
             </form>
         </div>
