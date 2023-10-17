@@ -13,6 +13,7 @@ body{
 table{
     width: 700px;
     border-collapse: collapse;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 table th{
@@ -30,6 +31,7 @@ table caption{
     border: 1px solid gray;
     border-radius: 10px 10px 0 0;
     padding: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 table thead{
