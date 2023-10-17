@@ -3,4 +3,4 @@
 
 Projeto focado em autoaprendizagem.
 
-<a href="https://brunolitrenta.github.io/siga2/html/login.html" target="_blank" rel="external">SIGA 2</a>
+Acesse o projeto hospedado aqui: <a href="https://brunolitrenta.github.io/siga2/html/login.html" target="_blank" rel="external">SIGA 2</a>
