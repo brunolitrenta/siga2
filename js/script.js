@@ -1,5 +1,6 @@
 function userdata(username) {
-    const datausers = [{
+    const datausers = [
+    {
         nome: "Bruno Vergara",
         usuario: "briven",
         ra: "001",
@@ -19,6 +20,20 @@ function userdata(username) {
         ra: "003",
         curso: "Preguiçoso",
         ciclo: "Todo dia ele cicla"
+    },    
+    {
+        nome: "Greis Lukaku",
+        usuario: "greis",
+        ra: "004",
+        curso: "Ídolo",
+        ciclo: "Todos"
+    },   
+    {
+        nome: "Arthur Jester",
+        usuario: "jester",
+        ra: "005",
+        curso: "Pai do Talon",
+        ciclo: "Paterno"
     },
     {
         nome: "Mestre Miyagui",
@@ -26,14 +41,7 @@ function userdata(username) {
         ra: "009",
         curso: "Amor",
         ciclo: "Infinito"
-    },     
-    {
-        nome: "Greis Lukaku",
-        usuario: "greis",
-        ra: "004",
-        curso: "Ídolo",
-        ciclo: "Todos"
-    }            
+    }                   
     ]
 
     const user = datausers.find(user => user.usuario == username)
@@ -60,7 +68,11 @@ function loginAuth() {
     {
         "login": "greis",
         "senha": "igualopele"
-    }              
+    },
+    {
+        "login": "jester",
+        "senha": "amomeufilho"
+    }  
     ]
     var usuario = document.getElementsByName('inputText')[0].value.toLowerCase();
     var senha = document.getElementsByName('inputPassword')[0].value
